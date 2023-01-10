@@ -1,0 +1,894 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Board/board.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Board/numbers.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Board/text.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/Tiles.gd" type="Script" id=4]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" type="ColorRect" parent="."]
+margin_left = -512.0
+margin_top = -304.0
+margin_right = 512.0
+margin_bottom = 304.0
+color = Color( 0.133333, 0.133333, 0.133333, 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="Board" type="Node2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="Grid" type="Sprite" parent="Board"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+
+[node name="Text" type="Sprite" parent="Board"]
+position = Vector2( 0, 200 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+
+[node name="Numbers" type="Sprite" parent="Board"]
+position = Vector2( 200, 0 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+
+[node name="Files" type="HBoxContainer" parent="Board"]
+margin_left = -176.0
+margin_top = -176.0
+margin_right = 176.0
+margin_bottom = 176.0
+rect_min_size = Vector2( 44, 352 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="A" type="VBoxContainer" parent="Board/Files"]
+margin_right = 44.0
+margin_bottom = 352.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="A8" type="MarginContainer" parent="Board/Files/A"]
+margin_right = 44.0
+margin_bottom = 44.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="A8" type="Button" parent="Board/Files/A/A8"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="A7" type="MarginContainer" parent="Board/Files/A"]
+margin_top = 44.0
+margin_right = 44.0
+margin_bottom = 88.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="A7" type="Button" parent="Board/Files/A/A7"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="A6" type="MarginContainer" parent="Board/Files/A"]
+margin_top = 88.0
+margin_right = 44.0
+margin_bottom = 132.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="A6" type="Button" parent="Board/Files/A/A6"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="A5" type="MarginContainer" parent="Board/Files/A"]
+margin_top = 132.0
+margin_right = 44.0
+margin_bottom = 176.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="A5" type="Button" parent="Board/Files/A/A5"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="A4" type="MarginContainer" parent="Board/Files/A"]
+margin_top = 176.0
+margin_right = 44.0
+margin_bottom = 220.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="A4" type="Button" parent="Board/Files/A/A4"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="A3" type="MarginContainer" parent="Board/Files/A"]
+margin_top = 220.0
+margin_right = 44.0
+margin_bottom = 264.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="A3" type="Button" parent="Board/Files/A/A3"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="A2" type="MarginContainer" parent="Board/Files/A"]
+margin_top = 264.0
+margin_right = 44.0
+margin_bottom = 308.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="A2" type="Button" parent="Board/Files/A/A2"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="A1" type="MarginContainer" parent="Board/Files/A"]
+margin_top = 308.0
+margin_right = 44.0
+margin_bottom = 352.0
+rect_pivot_offset = Vector2( -137, -220 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="A1" type="Button" parent="Board/Files/A/A1"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 44.0
+margin_bottom = 44.0
+focus_mode = 0
+action_mode = 0
+
+[node name="B" type="VBoxContainer" parent="Board/Files"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 44.0
+margin_right = 88.0
+margin_bottom = 352.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="B8" type="MarginContainer" parent="Board/Files/B"]
+margin_right = 44.0
+margin_bottom = 44.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="B8" type="Button" parent="Board/Files/B/B8"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="B7" type="MarginContainer" parent="Board/Files/B"]
+margin_top = 44.0
+margin_right = 44.0
+margin_bottom = 88.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="B7" type="Button" parent="Board/Files/B/B7"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="B6" type="MarginContainer" parent="Board/Files/B"]
+margin_top = 88.0
+margin_right = 44.0
+margin_bottom = 132.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="B6" type="Button" parent="Board/Files/B/B6"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="B5" type="MarginContainer" parent="Board/Files/B"]
+margin_top = 132.0
+margin_right = 44.0
+margin_bottom = 176.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="B5" type="Button" parent="Board/Files/B/B5"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="B4" type="MarginContainer" parent="Board/Files/B"]
+margin_top = 176.0
+margin_right = 44.0
+margin_bottom = 220.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="B4" type="Button" parent="Board/Files/B/B4"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="B3" type="MarginContainer" parent="Board/Files/B"]
+margin_top = 220.0
+margin_right = 44.0
+margin_bottom = 264.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="B3" type="Button" parent="Board/Files/B/B3"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="B2" type="MarginContainer" parent="Board/Files/B"]
+margin_top = 264.0
+margin_right = 44.0
+margin_bottom = 308.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="B2" type="Button" parent="Board/Files/B/B2"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="B1" type="MarginContainer" parent="Board/Files/B"]
+margin_top = 308.0
+margin_right = 44.0
+margin_bottom = 352.0
+rect_pivot_offset = Vector2( -137, -220 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="B1" type="Button" parent="Board/Files/B/B1"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="C" type="VBoxContainer" parent="Board/Files"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 88.0
+margin_right = 132.0
+margin_bottom = 352.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="C8" type="MarginContainer" parent="Board/Files/C"]
+margin_right = 44.0
+margin_bottom = 44.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="C8" type="Button" parent="Board/Files/C/C8"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="C7" type="MarginContainer" parent="Board/Files/C"]
+margin_top = 44.0
+margin_right = 44.0
+margin_bottom = 88.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="C7" type="Button" parent="Board/Files/C/C7"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="C6" type="MarginContainer" parent="Board/Files/C"]
+margin_top = 88.0
+margin_right = 44.0
+margin_bottom = 132.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="C6" type="Button" parent="Board/Files/C/C6"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="C5" type="MarginContainer" parent="Board/Files/C"]
+margin_top = 132.0
+margin_right = 44.0
+margin_bottom = 176.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="C5" type="Button" parent="Board/Files/C/C5"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="C4" type="MarginContainer" parent="Board/Files/C"]
+margin_top = 176.0
+margin_right = 44.0
+margin_bottom = 220.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="C4" type="Button" parent="Board/Files/C/C4"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="C3" type="MarginContainer" parent="Board/Files/C"]
+margin_top = 220.0
+margin_right = 44.0
+margin_bottom = 264.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="C3" type="Button" parent="Board/Files/C/C3"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="C2" type="MarginContainer" parent="Board/Files/C"]
+margin_top = 264.0
+margin_right = 44.0
+margin_bottom = 308.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="C2" type="Button" parent="Board/Files/C/C2"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="C1" type="MarginContainer" parent="Board/Files/C"]
+margin_top = 308.0
+margin_right = 44.0
+margin_bottom = 352.0
+rect_pivot_offset = Vector2( -137, -220 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="C1" type="Button" parent="Board/Files/C/C1"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="D" type="VBoxContainer" parent="Board/Files"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 132.0
+margin_right = 176.0
+margin_bottom = 352.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="D8" type="MarginContainer" parent="Board/Files/D"]
+margin_right = 44.0
+margin_bottom = 44.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="D8" type="Button" parent="Board/Files/D/D8"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="D7" type="MarginContainer" parent="Board/Files/D"]
+margin_top = 44.0
+margin_right = 44.0
+margin_bottom = 88.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="D7" type="Button" parent="Board/Files/D/D7"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="D6" type="MarginContainer" parent="Board/Files/D"]
+margin_top = 88.0
+margin_right = 44.0
+margin_bottom = 132.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="D6" type="Button" parent="Board/Files/D/D6"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="D5" type="MarginContainer" parent="Board/Files/D"]
+margin_top = 132.0
+margin_right = 44.0
+margin_bottom = 176.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="D5" type="Button" parent="Board/Files/D/D5"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="D4" type="MarginContainer" parent="Board/Files/D"]
+margin_top = 176.0
+margin_right = 44.0
+margin_bottom = 220.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="D4" type="Button" parent="Board/Files/D/D4"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="D3" type="MarginContainer" parent="Board/Files/D"]
+margin_top = 220.0
+margin_right = 44.0
+margin_bottom = 264.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="D3" type="Button" parent="Board/Files/D/D3"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="D2" type="MarginContainer" parent="Board/Files/D"]
+margin_top = 264.0
+margin_right = 44.0
+margin_bottom = 308.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="D2" type="Button" parent="Board/Files/D/D2"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="D1" type="MarginContainer" parent="Board/Files/D"]
+margin_top = 308.0
+margin_right = 44.0
+margin_bottom = 352.0
+rect_pivot_offset = Vector2( -137, -220 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="D1" type="Button" parent="Board/Files/D/D1"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="E" type="VBoxContainer" parent="Board/Files"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 176.0
+margin_right = 220.0
+margin_bottom = 352.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="E8" type="MarginContainer" parent="Board/Files/E"]
+margin_right = 44.0
+margin_bottom = 44.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="E8" type="Button" parent="Board/Files/E/E8"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="E7" type="MarginContainer" parent="Board/Files/E"]
+margin_top = 44.0
+margin_right = 44.0
+margin_bottom = 88.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="E7" type="Button" parent="Board/Files/E/E7"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="E6" type="MarginContainer" parent="Board/Files/E"]
+margin_top = 88.0
+margin_right = 44.0
+margin_bottom = 132.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="E6" type="Button" parent="Board/Files/E/E6"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="E5" type="MarginContainer" parent="Board/Files/E"]
+margin_top = 132.0
+margin_right = 44.0
+margin_bottom = 176.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="E5" type="Button" parent="Board/Files/E/E5"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="E4" type="MarginContainer" parent="Board/Files/E"]
+margin_top = 176.0
+margin_right = 44.0
+margin_bottom = 220.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="E4" type="Button" parent="Board/Files/E/E4"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="E3" type="MarginContainer" parent="Board/Files/E"]
+margin_top = 220.0
+margin_right = 44.0
+margin_bottom = 264.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="E3" type="Button" parent="Board/Files/E/E3"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="E2" type="MarginContainer" parent="Board/Files/E"]
+margin_top = 264.0
+margin_right = 44.0
+margin_bottom = 308.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="E2" type="Button" parent="Board/Files/E/E2"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="E1" type="MarginContainer" parent="Board/Files/E"]
+margin_top = 308.0
+margin_right = 44.0
+margin_bottom = 352.0
+rect_pivot_offset = Vector2( -137, -220 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="E1" type="Button" parent="Board/Files/E/E1"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="F" type="VBoxContainer" parent="Board/Files"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 220.0
+margin_right = 264.0
+margin_bottom = 352.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="F8" type="MarginContainer" parent="Board/Files/F"]
+margin_right = 44.0
+margin_bottom = 44.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="F8" type="Button" parent="Board/Files/F/F8"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="F7" type="MarginContainer" parent="Board/Files/F"]
+margin_top = 44.0
+margin_right = 44.0
+margin_bottom = 88.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="F7" type="Button" parent="Board/Files/F/F7"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="F6" type="MarginContainer" parent="Board/Files/F"]
+margin_top = 88.0
+margin_right = 44.0
+margin_bottom = 132.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="F6" type="Button" parent="Board/Files/F/F6"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="F5" type="MarginContainer" parent="Board/Files/F"]
+margin_top = 132.0
+margin_right = 44.0
+margin_bottom = 176.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="F5" type="Button" parent="Board/Files/F/F5"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="F4" type="MarginContainer" parent="Board/Files/F"]
+margin_top = 176.0
+margin_right = 44.0
+margin_bottom = 220.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="F4" type="Button" parent="Board/Files/F/F4"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="F3" type="MarginContainer" parent="Board/Files/F"]
+margin_top = 220.0
+margin_right = 44.0
+margin_bottom = 264.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="F3" type="Button" parent="Board/Files/F/F3"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="F2" type="MarginContainer" parent="Board/Files/F"]
+margin_top = 264.0
+margin_right = 44.0
+margin_bottom = 308.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="F2" type="Button" parent="Board/Files/F/F2"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="F1" type="MarginContainer" parent="Board/Files/F"]
+margin_top = 308.0
+margin_right = 44.0
+margin_bottom = 352.0
+rect_pivot_offset = Vector2( -137, -220 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="F1" type="Button" parent="Board/Files/F/F1"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="G" type="VBoxContainer" parent="Board/Files"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 264.0
+margin_right = 308.0
+margin_bottom = 352.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="G8" type="MarginContainer" parent="Board/Files/G"]
+margin_right = 44.0
+margin_bottom = 44.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="G8" type="Button" parent="Board/Files/G/G8"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="G7" type="MarginContainer" parent="Board/Files/G"]
+margin_top = 44.0
+margin_right = 44.0
+margin_bottom = 88.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="G7" type="Button" parent="Board/Files/G/G7"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="G6" type="MarginContainer" parent="Board/Files/G"]
+margin_top = 88.0
+margin_right = 44.0
+margin_bottom = 132.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="G6" type="Button" parent="Board/Files/G/G6"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="G5" type="MarginContainer" parent="Board/Files/G"]
+margin_top = 132.0
+margin_right = 44.0
+margin_bottom = 176.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="G5" type="Button" parent="Board/Files/G/G5"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="G4" type="MarginContainer" parent="Board/Files/G"]
+margin_top = 176.0
+margin_right = 44.0
+margin_bottom = 220.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="G4" type="Button" parent="Board/Files/G/G4"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="G3" type="MarginContainer" parent="Board/Files/G"]
+margin_top = 220.0
+margin_right = 44.0
+margin_bottom = 264.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="G3" type="Button" parent="Board/Files/G/G3"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="G2" type="MarginContainer" parent="Board/Files/G"]
+margin_top = 264.0
+margin_right = 44.0
+margin_bottom = 308.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="G2" type="Button" parent="Board/Files/G/G2"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="G1" type="MarginContainer" parent="Board/Files/G"]
+margin_top = 308.0
+margin_right = 44.0
+margin_bottom = 352.0
+rect_pivot_offset = Vector2( -137, -220 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="G1" type="Button" parent="Board/Files/G/G1"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="H" type="VBoxContainer" parent="Board/Files"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 308.0
+margin_right = 352.0
+margin_bottom = 352.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="H8" type="MarginContainer" parent="Board/Files/H"]
+margin_right = 44.0
+margin_bottom = 44.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="H8" type="Button" parent="Board/Files/H/H8"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="H7" type="MarginContainer" parent="Board/Files/H"]
+margin_top = 44.0
+margin_right = 44.0
+margin_bottom = 88.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="H7" type="Button" parent="Board/Files/H/H7"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="H6" type="MarginContainer" parent="Board/Files/H"]
+margin_top = 88.0
+margin_right = 44.0
+margin_bottom = 132.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="H6" type="Button" parent="Board/Files/H/H6"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="H5" type="MarginContainer" parent="Board/Files/H"]
+margin_top = 132.0
+margin_right = 44.0
+margin_bottom = 176.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="H5" type="Button" parent="Board/Files/H/H5"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="H4" type="MarginContainer" parent="Board/Files/H"]
+margin_top = 176.0
+margin_right = 44.0
+margin_bottom = 220.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="H4" type="Button" parent="Board/Files/H/H4"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="H3" type="MarginContainer" parent="Board/Files/H"]
+margin_top = 220.0
+margin_right = 44.0
+margin_bottom = 264.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="H3" type="Button" parent="Board/Files/H/H3"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="H2" type="MarginContainer" parent="Board/Files/H"]
+margin_top = 264.0
+margin_right = 44.0
+margin_bottom = 308.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="H2" type="Button" parent="Board/Files/H/H2"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[node name="H1" type="MarginContainer" parent="Board/Files/H"]
+margin_top = 308.0
+margin_right = 44.0
+margin_bottom = 352.0
+rect_pivot_offset = Vector2( -137, -220 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="H1" type="Button" parent="Board/Files/H/H1"]
+margin_right = 44.0
+margin_bottom = 44.0
+
+[connection signal="button_down" from="Board/Files/A/A8/A8" to="Board" method="_on_A8_button_down"]
+[connection signal="button_down" from="Board/Files/A/A7/A7" to="Board" method="_on_A7_button_down"]
+[connection signal="button_down" from="Board/Files/A/A6/A6" to="Board" method="_on_A6_button_down"]
+[connection signal="button_down" from="Board/Files/A/A5/A5" to="Board" method="_on_A5_button_down"]
+[connection signal="button_down" from="Board/Files/A/A4/A4" to="Board" method="_on_A4_button_down"]
+[connection signal="button_down" from="Board/Files/A/A3/A3" to="Board" method="_on_A3_button_down"]
+[connection signal="button_down" from="Board/Files/A/A2/A2" to="Board" method="_on_A2_button_down"]
+[connection signal="button_down" from="Board/Files/A/A1/A1" to="Board" method="_on_A1_button_down"]
+[connection signal="button_down" from="Board/Files/B/B8/B8" to="Board" method="_on_B8_button_down"]
+[connection signal="button_down" from="Board/Files/B/B7/B7" to="Board" method="_on_B7_button_down"]
+[connection signal="button_down" from="Board/Files/B/B6/B6" to="Board" method="_on_B6_button_down"]
+[connection signal="button_down" from="Board/Files/B/B5/B5" to="Board" method="_on_B5_button_down"]
+[connection signal="button_down" from="Board/Files/B/B4/B4" to="Board" method="_on_B4_button_down"]
+[connection signal="button_down" from="Board/Files/B/B3/B3" to="Board" method="_on_B3_button_down"]
+[connection signal="button_down" from="Board/Files/B/B2/B2" to="Board" method="_on_B2_button_down"]
+[connection signal="button_down" from="Board/Files/B/B1/B1" to="Board" method="_on_B1_button_down"]
+[connection signal="button_down" from="Board/Files/C/C8/C8" to="Board" method="_on_C8_button_down"]
+[connection signal="button_down" from="Board/Files/C/C7/C7" to="Board" method="_on_C7_button_down"]
+[connection signal="button_down" from="Board/Files/C/C6/C6" to="Board" method="_on_C6_button_down"]
+[connection signal="button_down" from="Board/Files/C/C5/C5" to="Board" method="_on_C5_button_down"]
+[connection signal="button_down" from="Board/Files/C/C4/C4" to="Board" method="_on_C4_button_down"]
+[connection signal="button_down" from="Board/Files/C/C3/C3" to="Board" method="_on_C3_button_down"]
+[connection signal="button_down" from="Board/Files/C/C2/C2" to="Board" method="_on_C2_button_down"]
+[connection signal="button_down" from="Board/Files/C/C1/C1" to="Board" method="_on_C1_button_down"]
+[connection signal="button_down" from="Board/Files/D/D8/D8" to="Board" method="_on_D8_button_down"]
+[connection signal="button_down" from="Board/Files/D/D7/D7" to="Board" method="_on_D7_button_down"]
+[connection signal="button_down" from="Board/Files/D/D6/D6" to="Board" method="_on_D6_button_down"]
+[connection signal="button_down" from="Board/Files/D/D5/D5" to="Board" method="_on_D5_button_down"]
+[connection signal="button_down" from="Board/Files/D/D4/D4" to="Board" method="_on_D4_button_down"]
+[connection signal="button_down" from="Board/Files/D/D3/D3" to="Board" method="_on_D3_button_down"]
+[connection signal="button_down" from="Board/Files/D/D2/D2" to="Board" method="_on_D2_button_down"]
+[connection signal="button_down" from="Board/Files/D/D1/D1" to="Board" method="_on_D1_button_down"]
+[connection signal="button_down" from="Board/Files/E/E8/E8" to="Board" method="_on_E8_button_down"]
+[connection signal="button_down" from="Board/Files/E/E7/E7" to="Board" method="_on_E7_button_down"]
+[connection signal="button_down" from="Board/Files/E/E6/E6" to="Board" method="_on_E6_button_down"]
+[connection signal="button_down" from="Board/Files/E/E5/E5" to="Board" method="_on_E5_button_down"]
+[connection signal="button_down" from="Board/Files/E/E4/E4" to="Board" method="_on_E4_button_down"]
+[connection signal="button_down" from="Board/Files/E/E3/E3" to="Board" method="_on_E3_button_down"]
+[connection signal="button_down" from="Board/Files/E/E2/E2" to="Board" method="_on_E2_button_down"]
+[connection signal="button_down" from="Board/Files/E/E1/E1" to="Board" method="_on_E1_button_down"]
+[connection signal="button_down" from="Board/Files/F/F8/F8" to="Board" method="_on_F8_button_down"]
+[connection signal="button_down" from="Board/Files/F/F7/F7" to="Board" method="_on_F7_button_down"]
+[connection signal="button_down" from="Board/Files/F/F6/F6" to="Board" method="_on_F6_button_down"]
+[connection signal="button_down" from="Board/Files/F/F5/F5" to="Board" method="_on_F5_button_down"]
+[connection signal="button_down" from="Board/Files/F/F4/F4" to="Board" method="_on_F4_button_down"]
+[connection signal="button_down" from="Board/Files/F/F3/F3" to="Board" method="_on_F3_button_down"]
+[connection signal="button_down" from="Board/Files/F/F2/F2" to="Board" method="_on_F2_button_down"]
+[connection signal="button_down" from="Board/Files/F/F1/F1" to="Board" method="_on_F1_button_down"]
+[connection signal="button_down" from="Board/Files/G/G8/G8" to="Board" method="_on_G8_button_down"]
+[connection signal="button_down" from="Board/Files/G/G7/G7" to="Board" method="_on_G7_button_down"]
+[connection signal="button_down" from="Board/Files/G/G6/G6" to="Board" method="_on_G6_button_down"]
+[connection signal="button_down" from="Board/Files/G/G5/G5" to="Board" method="_on_G5_button_down"]
+[connection signal="button_down" from="Board/Files/G/G4/G4" to="Board" method="_on_G4_button_down"]
+[connection signal="button_down" from="Board/Files/G/G3/G3" to="Board" method="_on_G3_button_down"]
+[connection signal="button_down" from="Board/Files/G/G2/G2" to="Board" method="_on_G2_button_down"]
+[connection signal="button_down" from="Board/Files/G/G1/G1" to="Board" method="_on_G1_button_down"]
+[connection signal="button_down" from="Board/Files/H/H8/H8" to="Board" method="_on_H8_button_down"]
+[connection signal="button_down" from="Board/Files/H/H7/H7" to="Board" method="_on_H7_button_down"]
+[connection signal="button_down" from="Board/Files/H/H6/H6" to="Board" method="_on_H6_button_down"]
+[connection signal="button_down" from="Board/Files/H/H5/H5" to="Board" method="_on_H5_button_down"]
+[connection signal="button_down" from="Board/Files/H/H4/H4" to="Board" method="_on_H4_button_down"]
+[connection signal="button_down" from="Board/Files/H/H3/H3" to="Board" method="_on_H3_button_down"]
+[connection signal="button_down" from="Board/Files/H/H2/H2" to="Board" method="_on_H2_button_down"]
+[connection signal="button_down" from="Board/Files/H/H1/H1" to="Board" method="_on_H1_button_down"]
